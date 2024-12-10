@@ -1,0 +1,210 @@
+body{
+    background-color: #FFA857;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 100%; /* 16px */
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    .alumni-sans-inline-one-regular {
+        font-family: "Alumni Sans Inline One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .alumni-sans-inline-one-regular-italic {
+        font-family: "Alumni Sans Inline One", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+}
+
+h1{
+    font-size: 2.25em; /* 36px / 16px = 2.25em OR 225% */
+}
+
+h2{
+    font-size:  2.125em; /* 34px / 16px = 2.125em OR 212.5% */
+}
+
+h3{
+    font-size: 2em; /* 32px / 16px = 2em OR 200% */
+}
+
+/* make all of my images responsive */
+img{
+    max-width: 100%;
+    background-color: transparent;
+}
+
+/* Need to make background transparent */
+#container{
+    background-color: #ffffff;
+    /* width: 1200px; */
+    /* width: 100%; */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#header{
+    background-color: #FFA857;
+    flex: 1 0 100%;
+    height: 275px;
+}
+
+#nav{
+    background-color: #FDB3FD;
+    flex: 1 0 100%;
+    
+}
+#main{
+    background-color: #FFA857;
+    flex: 1 0 100%;
+}
+
+ul{
+    /* background-color: aliceblue; */
+    list-style-type: none;
+    padding: 30;
+    margin: 30;
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    
+}
+
+li{
+    margin-left: 10px;
+    
+}
+
+/* initial state of button */
+a:link{
+    display: block;
+    /* width: 150px;
+    text-align: center; */ 
+    /* background-color: aqua; */
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    /* border-top-left-radius: 5px; */
+}
+
+/* links that have been clicked */
+a:visited{
+    color:#ffffff;
+}
+
+/* rollover state */
+a:hover{
+    color:#ffffff;
+    /* background-color:darkmagenta; */
+    text-decoration: underline;
+}
+
+/* when clicked */
+a:active{
+    background-color:#E65D4A;
+    text-decoration: bold;
+}
+
+#main{
+    background-color:#FFA857;
+    ;
+    /* width: 800px; */
+    /* target / context = result */
+    /* 800px / 1200 = 66.666667% */
+    flex: 1 0 100%; 
+    height: flex;
+}
+
+/* Gallery Styling */
+#portfolio{
+    display: flex;
+    gap: 10px;
+}
+
+/* Gallery Styling */
+#portfolio_design{
+    display: flex;
+    gap: 10px;
+}
+
+
+#footer{
+    background-color: #FDB3FD;
+    flex: 1 0 100%;
+    padding: 10px;
+    
+}
+
+/* tablet - 800px */
+/* if viewport or screen size is 800px or less... */
+@media screen and (max-width: 800px){
+
+    #header{
+        height: 50px;
+    }
+
+    a:link{
+       
+        /* background-color: aqua; */
+        padding: 10px 15px;
+        color: #fff;
+   
+    }
+
+    #main{
+       
+        flex: 1 0 60%; 
+    }
+    
+    #sidebar1{
+
+        flex: 1 0 40%; /* 400px */
+        
+    }
+
+}
+
+/* mobile - 600px */
+/* if viewport or screen size is 600px or less... */
+@media screen and (max-width: 600px){
+
+    #header{
+        height: 100px;
+        /* order: 4; */
+    }
+
+    ul{
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #main{
+       
+        flex: 1 0 100%; 
+
+        /* order: 3; */
+    }
+    
+    #sidebar1{
+
+        /* display: none; */
+
+        flex: 1 0 100%; /* 400px */
+        /* order: 2; */
+        
+    }
+
+
+
+}
